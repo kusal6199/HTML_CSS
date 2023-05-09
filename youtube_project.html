@@ -13,14 +13,17 @@
         .first_image{
             width: 300px; 
             display:block; 
+            margin-bottom: 10px;
+           
         }
       
         .video_title{
             font-weight: bold;
-            width: 250px;
+            /* width: 250px; */
             font-size:14px;
-            /* line-height: 20px; */
+            line-height: 18px;
             margin-bottom: 0px; 
+            margin-top: 0px;
         }
         .channel_name{
             font-size: 13px;
@@ -37,11 +40,29 @@
             width: 300px;
             display: inline-block;
         }
-
+        .first_channel_owner_pic{
+            display:inline-block;
+            width: 40px;
+            vertical-align: top;
+            
+            
+        }
+        .channel_1_info{
+            display:inline-block;
+            width:200px;
+            
+        }
+        .fist_owner_pic{
+            width: 100%;
+            border-radius: 50px;
+            width: 34;
+        }
+    
 
         .second_image{
             width: 300px; 
             display:block; 
+            margin-bottom: 10px;
         }
       
         .second_video_title{
@@ -50,6 +71,7 @@
             font-size:14px;
             /* line-height: 20px; */
             margin-bottom: 0px; 
+            margin-top: 0px;
         }
         .second_channel_name{
             font-size: 13px;
@@ -68,6 +90,24 @@
             margin-left: 5px;
             vertical-align: top;
         }
+        .second_channel_owner_pic{
+            display:inline-block;
+            width: 40px;
+            vertical-align: top;
+        }
+        .channel_2_info{
+            display: inline-block;
+            vertical-align: top;
+            width: 200px;
+
+        }
+        .second_owner_pic{
+            width:100%;
+            border-radius: 60px;
+            width: 40;
+            
+        }
+       
        
     </style>
 
@@ -76,34 +116,65 @@
     <input class="search_box" type="text" placeholder="search">
     
     <div class="first_video">
-        <img class="first_image" src="image/thumbnail-1.webp">
-    <p class="video_title">
-       Talking Tech and AI with Google CEO Sundar Pichai!
-    </p>
 
-    <p class="channel_name">
-        Marques Brownlee
-    </p> 
+        <div> <img class="first_image" src="image/thumbnail-1.webp"></div>
+       
+        <div class="abc">
 
-    <p class="video_status">
-        3.4M views · 6 months ago
-    </p>
+            <div class="first_channel_owner_pic">
+                <img class="fist_owner_pic" src="image/channel-1.jpeg">
+            </div>
+            <div class="channel_1_info">
+                <p class="video_title">
+                    Talking Tech and AI with Google CEO Sundar Pichai!
+                 </p>
+             
+                 <p class="channel_name">
+                     Marques Brownlee
+                 </p> 
+             
+                 <p class="video_status">
+                     3.4M views · 6 months ago
+                 </p>
+            </div>
+
+            
+
+            
+
+            
+        </div>
     </div>
 
     <div class="second_video">
-        <img class="second_image" src="image/thumbnail-2.webp">
-    <p class="second_video_title"> 
-        Try Not To Laugh Challenge #9
-    </p>
+        <div class="second_video_thumbnail_pic">
+            <img class="second_image" src="image/thumbnail-2.webp">
+        </div>
 
-    <p class="second_channel_name">
-       Markiplier
-    </p> 
+        <div>
+            <div class="second_channel_owner_pic">
+                <img class="second_owner_pic" src="image/channel-2.jpeg">
+            </div>
 
-    <p class="second_video_status">
-        19M views · 4 years ago
-    </p>
+            <div class="channel_2_info">
+                <p class="second_video_title"> 
+                    Try Not To Laugh Challenge #9
+                </p>
+            
+                <p class="second_channel_name">
+                   Markiplier
+                </p> 
+            
+                <p class="second_video_status">
+                    19M views · 4 years ago
+                </p>
+            </div>
+            
+        </div>
+        
+    
     </div>
+    
 
 </body>
 </html>
