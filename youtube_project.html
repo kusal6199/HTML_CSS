@@ -2,7 +2,7 @@
 <head>
     <title>youtube.comm</title>
     <style>
-          .search_box{
+        .search_box{
             /* margin-bottom: 5px; */
             display: block;
             /* border-width: 1px; */
@@ -10,9 +10,11 @@
         p{
             font-family: arial;
         }
+        
+
         .first_image{
-            width: 300px; 
-            display:block; 
+            width: 100%; 
+            /* display:block;  */
             margin-bottom: 10px;
            
         }
@@ -24,6 +26,7 @@
             line-height: 18px;
             margin-bottom: 0px; 
             margin-top: 0px;
+            
         }
         .channel_name{
             font-size: 13px;
@@ -36,31 +39,41 @@
             font-size: 12.8px;
             opacity: 0.65;
         }
-        .first_video{
-            width: 300px;
-            display: inline-block;
-        }
+         /* .first_video{
+            /* width: 300px; */
+            /* display: inline-block; */
+        }*/
         .first_channel_owner_pic{
-            display:inline-block;
-            width: 40px;
+            /* display:inline-block; */
+            width: 50px;
             vertical-align: top;
+            /* background-color: gray; */
             
             
         }
         .channel_1_info{
-            display:inline-block;
-            width:200px;
+            /* display:inline-block; */
+            width:250px;
+            /* background-color: gray; */
             
         }
         .fist_owner_pic{
             width: 100%;
             border-radius: 50px;
-            width: 34;
+            width: 40;
+            
+        }
+
+        .first_video_info_grid{
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        
+
         }
     
 
         .second_image{
-            width: 300px; 
+            width: 100%; 
             display:block; 
             margin-bottom: 10px;
         }
@@ -87,18 +100,20 @@
         .second_video{
             width: 300px;
             display: inline-block;
-            margin-left: 5px;
+            /* margin-left: 5px; */
             vertical-align: top;
         }
         .second_channel_owner_pic{
-            display:inline-block;
-            width: 40px;
+            /* display:inline-block; */
+            width: 50px;
             vertical-align: top;
+            /* background-color: gray; */
         }
         .channel_2_info{
-            display: inline-block;
+            /* display: inline-block; */
             vertical-align: top;
-            width: 200px;
+            width: 250px;
+            /* background-color: grey; */
 
         }
         .second_owner_pic{
@@ -107,6 +122,15 @@
             width: 40;
             
         }
+        .second_video_info_grid{
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
+
+        .video_grid{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
        
        
     </style>
@@ -114,67 +138,158 @@
 </head>
 <body>
     <input class="search_box" type="text" placeholder="search">
+
+    <div class="video_grid">
+        <div class="first_video">
+
+            <div><img class="first_image" src="image/thumbnail-1.webp"></div>
+           
+                <div class="first_video_info_grid">
+                    <div class="first_channel_owner_pic">
+                        <img class="fist_owner_pic" src="image/channel-1.jpeg">
+                    </div><div class="channel_1_info">
+                        <p class="video_title">
+                            Talking Tech and AI with Google CEO Sundar Pichai!
+                        </p>
+                    
+                        <p class="channel_name">
+                            Marques Brownlee
+                        </p> 
+                    
+                        <p class="video_status">
+                            3.4M views · 6 months ago
+                        </p>
+                    </div>
+                </div>
     
-    <div class="first_video">
-
-        <div> <img class="first_image" src="image/thumbnail-1.webp"></div>
-       
-        <div class="abc">
-
-            <div class="first_channel_owner_pic">
-                <img class="fist_owner_pic" src="image/channel-1.jpeg">
             </div>
-            <div class="channel_1_info">
-                <p class="video_title">
-                    Talking Tech and AI with Google CEO Sundar Pichai!
-                 </p>
-             
-                 <p class="channel_name">
-                     Marques Brownlee
-                 </p> 
-             
-                 <p class="video_status">
-                     3.4M views · 6 months ago
-                 </p>
-            </div>
-
-            
-
-            
-
-            
+            <div class="second_video">
+                <div class="second_video_thumbnail_pic">
+                    <img class="second_image" src="image/thumbnail-2.webp">
+                </div>
+                <div class="second_video_info_grid">
+                    <div class="second_channel_owner_pic">
+                        <img class="second_owner_pic" src="image/channel-2.jpeg">
+                    </div>
+                    <div class="channel_2_info">
+                        <p class="second_video_title"> 
+                            Try Not To Laugh Challenge #9
+                        </p>
+                    
+                        <p class="second_channel_name">
+                        Markiplier
+                        </p> 
+                    
+                        <p class="second_video_status">
+                            19M views · 4 years ago
+                        </p>
+                    </div>
+                    
+                </div>
         </div>
+    
+    
+    
+        <div class="first_video">
+    
+            <div><img class="first_image" src="image/thumbnail-1.webp"></div>
+           
+                <div class="first_video_info_grid">
+                    <div class="first_channel_owner_pic">
+                        <img class="fist_owner_pic" src="image/channel-1.jpeg">
+                    </div><div class="channel_1_info">
+                        <p class="video_title">
+                            Talking Tech and AI with Google CEO Sundar Pichai!
+                        </p>
+                    
+                        <p class="channel_name">
+                            Marques Brownlee
+                        </p> 
+                    
+                        <p class="video_status">
+                            3.4M views · 6 months ago
+                        </p>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="second_video">
+                <div class="second_video_thumbnail_pic">
+                    <img class="second_image" src="image/thumbnail-2.webp">
+                </div>
+                <div class="second_video_info_grid">
+                    <div class="second_channel_owner_pic">
+                        <img class="second_owner_pic" src="image/channel-2.jpeg">
+                    </div>
+                    <div class="channel_2_info">
+                        <p class="second_video_title"> 
+                            Try Not To Laugh Challenge #9
+                        </p>
+                    
+                        <p class="second_channel_name">
+                        Markiplier
+                        </p> 
+                    
+                        <p class="second_video_status">
+                            19M views · 4 years ago
+                        </p>
+                    </div>
+                    
+                </div>
+        </div>
+    
+    
+    
+        <div class="first_video">
+    
+            <div><img class="first_image" src="image/thumbnail-1.webp"></div>
+           
+                <div class="first_video_info_grid">
+                    <div class="first_channel_owner_pic">
+                        <img class="fist_owner_pic" src="image/channel-1.jpeg">
+                    </div><div class="channel_1_info">
+                        <p class="video_title">
+                            Talking Tech and AI with Google CEO Sundar Pichai!
+                        </p>
+                    
+                        <p class="channel_name">
+                            Marques Brownlee
+                        </p> 
+                    
+                        <p class="video_status">
+                            3.4M views · 6 months ago
+                        </p>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="second_video">
+                <div class="second_video_thumbnail_pic">
+                    <img class="second_image" src="image/thumbnail-2.webp">
+                </div>
+                <div class="second_video_info_grid">
+                    <div class="second_channel_owner_pic">
+                        <img class="second_owner_pic" src="image/channel-2.jpeg">
+                    </div>
+                    <div class="channel_2_info">
+                        <p class="second_video_title"> 
+                            Try Not To Laugh Challenge #9
+                        </p>
+                    
+                        <p class="second_channel_name">
+                        Markiplier
+                        </p> 
+                    
+                        <p class="second_video_status">
+                            19M views · 4 years ago
+                        </p>
+                    </div>
+                    
+                </div>  
+        </div>
+
     </div>
-
-    <div class="second_video">
-        <div class="second_video_thumbnail_pic">
-            <img class="second_image" src="image/thumbnail-2.webp">
-        </div>
-
-        <div>
-            <div class="second_channel_owner_pic">
-                <img class="second_owner_pic" src="image/channel-2.jpeg">
-            </div>
-
-            <div class="channel_2_info">
-                <p class="second_video_title"> 
-                    Try Not To Laugh Challenge #9
-                </p>
-            
-                <p class="second_channel_name">
-                   Markiplier
-                </p> 
-            
-                <p class="second_video_status">
-                    19M views · 4 years ago
-                </p>
-            </div>
-            
-        </div>
-        
     
-    </div>
     
-
 </body>
 </html>
