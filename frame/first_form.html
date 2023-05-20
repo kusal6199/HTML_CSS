@@ -4,12 +4,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .fname{
+            margin-bottom: 15px;
+        }
+        .lname{
+            margin-bottom: 15px;
+        }
+        .gender{
+            margin-bottom: 15px;
+        }
+        .eid{
+            margin-bottom: 15px;
+        }
+        .degination{
+            margin-top: 15px;
+        }
+        .pnumber{
+          margin-top: 15px;
+        }
+        .password{
+          margin-top: 15px;
+        }
+        .textarea{
+          margin-top: 15px;
+        }
+        .suscribe_button{
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+        .reset{
+          margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
-    <form action="" method="get">
-        <label for="Username">Username: </label> <input type="text" name="Username" placeholder="r u here">
-        <input type="submit" name="su">
-
+    <h2>this is form tuterial</h2>
+    <form action="">
+      <div class="fname">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="enter first name">
+      </div>
+      <div class="lname">
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="enter last name">
+     </div> 
+     <div class="gender">
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="others">Others
+     </div>
+     <div class="eid">
+        <label for="eid">Employee ID</label>
+        <input type="number" name="eid" id="eid" maxlength="3">
+     </div>
+     <div class="degination">
+        <label for="dgn">Designation:</label>
+        <input type="text" id="dgn" name="dgn" placeholder="enter degination">
+      </div>
+      <div class="pnumber">
+        <label for="phn">Phone Number:</label>
+        <input type="number" id="phn" name="phn" placeholder="enter phonenumber">
+      </div>    
+      <div class="password">
+        <label for="password">password</label>
+        <input type="password" id="password" >
+      </div>    
+      <div class="textarea">
+        <label for="" style="display: block; margin-bottom: 5px;">feedback</label>
+        <textarea name="textare" id="textare" cols="30" rows="10" placeholder="feedback">feedback</textarea>
+      </div>
+      <div class="suscribe_button">
+        <input type="submit" value="Subbmit" name="Subbmit">
+      </div>
+      <div class="reset">
+        <input type="reset" value="reset" name="reset">
+      </div>
+      <input type="image" src="channel-3.jpeg">
+      
     </form>
 </body>
 </html>
