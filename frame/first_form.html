@@ -38,9 +38,9 @@
         }
     </style>
 </head>
-<body>
+<body style="padding-bottom: 100px;">
     <h2>this is form tuterial</h2>
-    <form action="">
+    <form action="backend.php" enctype="multipart/form-data">
       <div class="fname">
         <label for="fname">First Name:</label>
         <input type="text" id="fname" name="fname" placeholder="enter first name">
@@ -81,7 +81,51 @@
         <input type="reset" value="reset" name="reset">
       </div>
       <input type="image" src="channel-3.jpeg">
-      
+      <div>
+        <p>your hobbies</p>
+        <label for="abab"></label>
+        <input type="checkbox" value="gaming">Gaming
+        <input type="checkbox" value="travelling">Travelling
+        <input type="checkbox" value="jogging">Jogging
+      </div>
+      <br>
+      <br>
+      <div>
+        <p>slect your country</p>
+        <label for=""></label>
+        <select name="nepal" multiple id="123">
+          <option value="nepal">Nepal</option>
+          <option value="pakistan">Pakistan</option>
+          <option value="usa">USA</option>
+          <option value="">India</option>
+        </select>
+        <br>
+        <br>
+        <label for="citizenship">upload your citizenship</label>
+        <br>
+        <input type="hidden" name="id" value="12">
+        <br>
+        <input type="file">
+        
+      </div>
+      <br><br>
+      <label for="email">enter your email</label>
+        <input type="email" name="email">
+        <br><br>
+        <label for="birthday">slect your birhday</label>
+        <input type="date">
+        <br><br>
+        <label for="time">slect your time</label>
+        <input type="time">
+        <br><br>
+        <label for="url">your URL</label>
+        <input type="url">
+        <br><br>
+        <p>your age range</p>
+        <p>10-20 &nbsp; 20-30 &nbsp; 30-40 &nbsp; 40-50</p>
+        <label  for="range"></label>
+        <input style="width: 200px;" type="range">
     </form>
+
 </body>
 </html>
